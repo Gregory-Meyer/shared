@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Using the POSIX library functions in `<dnfcn.h>`, dynamic libraries can be
+Using the POSIX library functions in `<dlfcn.h>`, dynamic libraries can be
 loaded and symbols linked against at runtime. Combined with a little
 hand-rolled vtable trickery, this can be used to dynamically load the
 implementation of a type at runtime.
