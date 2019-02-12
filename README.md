@@ -1,5 +1,12 @@
 # shared
 
+## Abstract
+
+Using the POSIX library functions in `<dnfcn.h>`, dynamic libraries can be
+loaded and symbols linked against at runtime. Combined with a little
+hand-rolled vtable trickery, this can be used to dynamically load the
+implementation of a type at runtime.
+
 ## Sample output of bench_vec_wrapper
 
 ```
