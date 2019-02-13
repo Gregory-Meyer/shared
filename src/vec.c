@@ -26,6 +26,11 @@ static Vector* as_vec_mut(void *self) {
 
 void* Vec_new(void) {
     Vector *const self = malloc(sizeof(Vector) + sizeof(int) * DEFAULT_CAPACITY);
+
+    if (!self) {
+        return NULL;
+    }
+
     self->len = 0;
     self->capacity = DEFAULT_CAPACITY;
 
